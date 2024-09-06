@@ -1,0 +1,21 @@
+﻿.about {
+    padding: 93px 0px;
+    max-width: 1200px;
+    margin: auto;
+    font-size:20px;
+}
+p{
+    padding:5px 0px;
+}
+
+.footer {
+    background: #00ffdc61;
+    padding: 1px;
+}
+
+.cp-text {
+    color: rgba(0,0,0,.7);
+    font-size: 18px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}

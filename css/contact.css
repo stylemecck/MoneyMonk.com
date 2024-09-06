@@ -1,0 +1,152 @@
+﻿.contact-content {
+    padding: 100px 0;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background: rebeccapurple;
+    border-radius: 15px;
+}
+
+.contact-form {
+    padding: 20px 30px;
+    display: flex;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-form-left {
+    display: flex;
+    width: 50%;
+}
+
+.content-form-right {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    .content-form-right p {
+        text-align: center;
+    }
+
+    .content-form-right div {
+        padding: 10px 0;
+    }
+
+.lable-con {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    color: white;
+}
+
+.input-con {
+    width: 100%;
+    margin: 8px 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 2px;
+
+}
+
+    .input-con:focus {
+        outline: 2px solid rebeccapurple;
+        outline-offset: 2px;
+    }
+
+.letterSpace {
+    text-align: center;
+    padding: 33px;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+/* Preview Panel Styles */
+.preview-panel {
+    background-color: white;
+    border-radius: 10px;
+    padding:30px 20px;
+    width: 86%;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.preview-item {
+    padding: 10px 0;
+    font-size: 18px;
+    color: rebeccapurple;
+}
+
+.preview-panel p {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rebeccapurple;
+    color:black;
+}
+
+/* Button Styling */
+.button {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background-color: darkviolet;
+    }
+
+/* Navigation Link Hover */
+.navbar a:hover {
+    color: darkviolet;
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .content-form-left, .content-form-right {
+        width: 100%;
+    }
+}
+.error-message {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

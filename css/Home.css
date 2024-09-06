@@ -1,0 +1,450 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+/* Reset and normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    justify-content: space-between; /* Ensure space is distributed between elements */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:1000;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+    .Logo img {
+        width: 90px;
+        height: 77px;
+    }
+
+.menu1 {
+    display: flex;
+    /* align-content: center; */
+    /*justify-content: flex-start;*/
+    align-items: center;
+    flex: 1; /* Allows the menu section to grow */
+    justify-content: space-between; /* Distributes space between middle and right menus */
+}
+.menu_mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .menu_mid ul {
+        display: flex;
+    }
+
+        .menu_mid ul li {
+            list-style: none;
+/*            padding: 10px 20px;*/
+        }
+
+            .menu_mid ul li a:hover {
+                background: #ff8800b3;
+            }
+
+            .menu_mid ul li a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+
+.menuRight {
+    display: flex;
+    color: black;
+    justify-content: flex-end; /* Aligns the items to the right */
+}
+
+    .menuRight ul {
+        display: flex;
+    }
+
+        .menuRight ul li {
+            list-style: none;
+            padding: 13px 3px;
+            /*            padding: 10px 20px;*/
+        }
+
+            .menuRight ul li a:hover {
+                background: #ff8800b3;
+                color:black;
+            }
+
+            .menuRight ul li a {
+                text-decoration: none;
+                
+                font-weight: 500;
+               cursor: pointer;
+                font-size: 18px;
+            }
+    .menuRight a {
+        background: #00a8ff;
+        border-radius: 19px;
+        color: white;
+        padding: 10px 20px;
+    }
+
+.sp-head {
+    text-align: center;
+    background-color: #0000005c;
+    padding: 5px;
+}
+
+.head-button {
+    text-align: center;
+    padding: 41px;
+}
+.button {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    background-color: #40c4ff;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    .button:hover {
+        background: black;
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+.Con1 {
+    max-width: 1200px;
+    margin: auto;
+    padding: 59px 0;
+}
+
+    .Con1 h1 {
+        text-align: center;
+        margin: 45px 0;
+        font-size: 88px;
+    }
+
+    .Con1 span {
+        color: red;
+        display:inline-block;
+    }
+
+    .Con1 p {
+        font-size: 22px;
+        text-align: center;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+.card-head {
+    background-color: #ff8800b3;
+    padding: 1px;
+}
+
+    .card-head h2 {
+        text-align: center;
+        font-size: 44px;
+        color: black;
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background: #ff8800b3;
+}
+
+.card {
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    width: 290px;
+    height: 375px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .card h3 {
+        font-size: 1em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #555;
+    }
+
+    .card p {
+        padding: 28px;
+        font-size: 0.80em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    .card:hover {
+        background-color: #f2f2f2;
+        transform: scale(1.05);
+    }
+
+    .card i {
+        padding-bottom: 15px;
+    }
+
+/* Testimonials */
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background: #16cbcdb3;
+}
+
+.testi-head {
+    background: #16cbcdb3;
+    padding: 1px;
+}
+
+    .testi-head h2 {
+        text-align: center;
+        font-size: 44px;
+    }
+
+.footer {
+    background: #00ffdc61;
+    padding: 15px;
+}
+
+.cp-text {
+    color: rgba(0,0,0,.7);
+    font-size: 20px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+/* Converter */
+.converter-head {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #1db2de;
+}
+
+.container-con {
+    max-width: 1200px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+    .container-con h2 {
+        font-size: 30px;
+        color: blue;
+    }
+
+.converter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 25px;
+    align-items: center;
+}
+
+    .converter-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .converter-form input, .converter-form select {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 200px;
+    }
+
+    .converter-form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+        .converter-form button:hover {
+            background-color: #0056b3;
+        }
+
+#btnConvert {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    background-color: #40c4ff;
+    border-radius: 20px;
+    color: #fff;
+    transition: 0.5s;
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+#btnConvert:hover{
+    background: black;
+    color: white;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 19px;
+    text-align: center;
+}
+
+/*faqs*/
+
+/* General styling for the FAQ section */
+.faqs {
+    padding: 20px;
+    background-color: #f9f9f9;
+    max-width:1200px;
+    margin:auto;
+}
+
+.fa-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-head-faqs {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+    .left-head-faqs h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .left-head-faqs span{
+    color: red;
+    }
+
+.left-head-faqs p {
+    font-size: 16px;
+    color: #666;
+}
+
+.right-head-faqs-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+    .right-head-faqs-image img {
+        height: 250px;
+        width: 400px;
+        object-fit: cover; /* Maintain aspect ratio */
+        border-radius: 8px; /* Optional: for rounded corners */
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fa-head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-head-faqs,
+    .right-head-faqs-image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+        .right-head-faqs-image img {
+            width: 100%;
+            height: auto;
+        }
+}
+/* fqas content2 */
+.faqs-content2{
+    display: flex;
+    max-width:1200px;
+    margin: auto;
+}
+.faqs-content2  i{
+    float: right;
+}
+.faqs-heading {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+    .active, .faqs-heading:hover {
+        background-color: #ccc;
+    }
+
+.faqs-content {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.left-faqs-con{
+    width:50%;
+}
+.right-faqs-con{
+    width:50%;
+}
+.capsul{
+    padding:10px;
+}
