@@ -134,7 +134,7 @@
     <Content Include="css\about.css" />
     <Content Include="css\contact.css" />
     <Content Include="css\home.css" />
-    <Content Include="Home.aspx" />
+    <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="Signup.aspx" />
     <Content Include="Web.config" />
@@ -148,12 +148,12 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
